@@ -1,0 +1,142 @@
+
+body{
+    background-color: rgb(212, 212, 212);
+    margin: 0px;
+}
+
+/*
+* Задаём стили навигации сайта:
+*/
+
+#menu{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    background-color: rgb(47, 133, 142);
+    color: white;
+}
+
+#menu nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+#menu nav li {
+    width: 100px;
+}
+
+#menu nav li:hover {
+    background:  rgb(26, 73, 78);
+}
+
+#menu nav li:first-child {
+    background-color: rgb(46, 46, 46);
+}
+
+#menu nav li:first-child:hover {
+    background-color: rgb(5, 5, 5);
+}
+
+#menu nav li a {
+    display: block;
+    padding: 10px 0;
+    color: white;
+
+    text-align: center;
+    text-wrap: nowrap;
+    text-decoration: none;
+}
+
+/*
+*   Оформление главного содержимого сайта
+*/
+
+#content{
+    display: flex;
+    flex-flow: row;
+
+
+    width: 100%;
+    margin: 4% 0;
+
+    background-color: white;
+}
+
+#content section{
+    width: 20%;
+    font-size: small;
+}
+
+#content section:nth-child(even){
+    width: 60%;
+    font-size: medium;
+}
+
+#content img{
+    width: 100%;
+}
+
+#content h1,h2,h3{
+    margin: 0;
+}
+
+#content h1{
+    font-size: 30px;
+}
+
+#content p{
+    display: block;
+    text-align: justify;
+}
+
+#content article{
+    margin: 1%;
+}
+
+/*
+*   Оформление футера
+*/
+
+#footer{
+    background-color: aquamarine;
+}
+
+#footer section:not([id="lable"]){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-top: 4%;
+}
+
+#footer article{
+    width: 21%;
+    margin: 2% 0;
+    text-align: center;
+    
+    background-color: white;
+}
+
+#footer article p{
+    margin: 10px;
+    text-align: justify;
+}
+
+#footer hr{
+    width: 80%;
+}
+
+#footer #lable{
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
