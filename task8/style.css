@@ -1,0 +1,30 @@
+
+.bar{
+    list-style: none;
+}
+
+.bar li{
+    display: inline;
+}
+
+.bar span{
+    color: #333;
+}
+
+.bar a{
+    text-decoration: none;
+    color: #0c52de;
+}
+
+.bar a:hover{
+    text-decoration: underline;
+}
+
+.bar li:not(:last-child)::after{
+    content: "  >  ";
+    margin: 6px;
+}
+
+
+
+
